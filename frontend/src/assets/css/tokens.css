@@ -1,0 +1,110 @@
+
+:root {
+  /* ── Canvas & Paper ── */
+  --color-paper: #F8F7F4;
+  --color-paper-2: #F2EFE9;
+  --color-paper-3: #EBE7DF;
+  --color-surface: #FDFDFB;
+  --color-surface-hover: #F7F6F2;
+  --color-overlay: rgba(28, 26, 24, 0.45);
+
+  /* ── Hairline Rules & Borders ── */
+  --color-rule: #E6E3DD;
+  --color-rule-strong: #D1CDC4;
+
+  /* ── Ink & Typography ── */
+  --color-ink: #1C1A18;
+  --color-ink-2: #383430;
+  --color-muted: #57524C;
+  --color-faint: #78736B;
+
+  /* ── Warm Persimmon Orange Accent (Appetite & Hospitality) ── */
+  --color-accent: #C44D26;
+  --color-accent-hover: #A83E1C;
+  --color-accent-light: #FDF3EE;
+  --color-accent-ink: #FDFDFB;
+  --color-focus: #C44D26;
+
+  /* ── Muted Semantic Signals ── */
+  --color-success: #2C6E49;
+  --color-success-light: #EBF3ED;
+  --color-warning: #8F6218;
+  --color-warning-light: #F7F1E5;
+  --color-danger: #A33A2D;
+  --color-danger-light: #F7ECEB;
+  --color-info: #355F82;
+  --color-info-light: #EBF1F6;
+
+  /* ── Restrained Elevation ── */
+  --shadow-sm: 0 1px 2px rgba(28, 26, 24, 0.04);
+  --shadow-md: 0 2px 6px rgba(28, 26, 24, 0.05);
+  --shadow-lg: 0 4px 16px rgba(28, 26, 24, 0.06);
+
+  /* ── Typography Scale ── */
+  --font-family: 'Readex Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* ── Radii ── */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-full: 9999px;
+
+  /* ── Focused transitions ── */
+  --transition-fast: 140ms ease-out;
+  --transition-base: 200ms ease-out;
+
+  /* ── Metrics ── */
+  --sidebar-width: 270px;
+  --max-width-page: 1200px;
+}
+
+/* ── Base Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+  font-family: var(--font-family);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  line-height: 1.65;
+  caret-color: var(--color-accent);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Focus Visibility (Hallmark Floor Rule 6) ── */
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* ── Active states ── */
+button:active,
+a:active {
+  transform: scale(0.99);
+}
+
+/* ── Reduced Motion (Hallmark Floor Rule 7) ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+::selection {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+}

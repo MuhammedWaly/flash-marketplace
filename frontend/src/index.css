@@ -1,0 +1,174 @@
+/* Hallmark: authentic editorial food delivery marketplace */
+/* Pure craft typography, warm persimmon accent, confident information hierarchy, zero generic AI soup */
+
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #F9F8F6;
+  --color-paper-subtle: #F3EFEA;
+  --color-paper-muted: #EBE5DC;
+
+  --color-surface: #FDFDFB;
+  --color-surface-hover: #F8F6F2;
+  --color-overlay: rgba(26, 24, 22, 0.45);
+
+  --color-rule: #E5E0D8;
+  --color-rule-strong: #CEC7BC;
+
+  --color-ink: #1A1816;
+  --color-ink-secondary: #3B3733;
+  --color-ink-muted: #6B655E;
+  --color-ink-faint: #948E85;
+  --color-muted: #6B655E;
+
+  --color-accent: #C44D26;
+  --color-accent-hover: #A83E1C;
+  --color-accent-light: #FDF3EE;
+  --color-accent-ink: #FDFDFB;
+
+  --color-success: #2C6E49;
+  --color-success-light: #EBF3ED;
+  --color-warning: #8F6218;
+  --color-warning-light: #F7F1E5;
+  --color-danger: #A33A2D;
+  --color-danger-light: #F7ECEB;
+
+  --font-readex: 'Readex Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-admin: 'IBM Plex Sans Arabic', 'Readex Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ── Accessible Focus Visible (Floor Rule 6 & 26a) ── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Form inputs manage their own borders; suppress inner outline clash */
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible {
+  outline: none !important;
+}
+
+/* ── Active Press States (Reflex 26b) ── */
+button:active:not(:disabled),
+a:active {
+  transform: translateY(1px);
+}
+
+/* ── Themed Browser Surfaces (Warn F16) ── */
+::selection {
+  background-color: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+* {
+  scrollbar-color: var(--color-rule-strong) var(--color-paper-subtle);
+  scrollbar-width: thin;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: clip;
+}
+
+body {
+  font-family: var(--font-readex);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Tabular figures for pricing alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Leaflet Map Adjustments (prevent Tailwind img reset clash) ── */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  font-family: inherit;
+}
+
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-control-zoom a {
+  color: var(--color-ink) !important;
+  background-color: var(--color-surface) !important;
+  border-color: var(--color-rule) !important;
+}
+
+.custom-leaflet-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -100%);
+  pointer-events: auto;
+}
+
+/* ── Hero Section Cover Animations (Appetizing Food Experience) ── */
+@keyframes kenBurnsAppetite {
+  0% {
+    transform: scale(1.0) translate(0%, 0%);
+  }
+  50% {
+    transform: scale(1.08) translate(-1.2%, -1%);
+  }
+  100% {
+    transform: scale(1.0) translate(0%, 0%);
+  }
+}
+
+@keyframes warmHeatGlow {
+  0%, 100% {
+    opacity: 0.18;
+    transform: scale(1.0) translateY(0);
+  }
+  50% {
+    opacity: 0.38;
+    transform: scale(1.06) translateY(-6px);
+  }
+}
+
+@keyframes steamParticleShimmer {
+  0% {
+    transform: translateY(8px) scale(0.96);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.04);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(8px) scale(0.96);
+    opacity: 0.25;
+  }
+}
+
+.animate-ken-burns {
+  animation: kenBurnsAppetite 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.animate-warm-glow {
+  animation: warmHeatGlow 7s ease-in-out infinite;
+}
+
+.animate-steam-shimmer {
+  animation: steamParticleShimmer 6s ease-in-out infinite;
+}

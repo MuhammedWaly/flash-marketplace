@@ -1,0 +1,32 @@
+/* Hallmark: category carousel and pill component styles */
+.category-carousel {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.25rem 0;
+  scrollbar-width: none;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.category-pill {
+  padding: 0.4375rem 0.875rem;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  color: var(--color-ink-2);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+}
+
+.category-pill:hover,
+.category-pill--active {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+  background: var(--color-paper-2);
+}

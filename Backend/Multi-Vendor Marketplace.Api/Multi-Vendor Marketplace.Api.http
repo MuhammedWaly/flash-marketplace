@@ -1,0 +1,7 @@
+@Multi_Vendor_Marketplace.Api_HostAddress = https://localhost:7066
+
+POST {{Multi_Vendor_Marketplace.Api_HostAddress}}/api/Resturants/
+Accept: application/json
+
+
+###

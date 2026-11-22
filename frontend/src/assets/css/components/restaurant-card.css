@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Component: RestaurantCard (كارت المطعم)
+   Classes: .restaurant-card, .restaurant-card__*
+   ========================================================================== */
+
+.restaurant-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-card:hover {
+  border-color: var(--color-rule-strong);
+  box-shadow: var(--shadow-sm);
+}
+.restaurant-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background-color: var(--color-paper-2);
+}
+.restaurant-card__body {
+  padding: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.restaurant-card__name {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-ink);
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+.restaurant-card__category {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+  margin-bottom: 0.875rem;
+}
+.restaurant-card__specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-rule);
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+}
+.restaurant-card__rating {
+  font-weight: 600;
+  color: var(--color-ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.restaurant-card__badge {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+.restaurant-card__badge--delivers {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+.restaurant-card__badge--out {
+  background: var(--color-paper-2);
+  color: var(--color-muted);
+}

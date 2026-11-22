@@ -1,0 +1,19 @@
+/* Hallmark: warm editorial food-delivery design system - modular component index */
+/* Editorial design: paper canvas, quiet borders, confident persimmon accents, zero visual noise */
+
+@import url('./components/restaurant-card.css');
+@import url('./components/dish-card.css');
+@import url('./components/badge-status.css');
+@import url('./components/order-stepper.css');
+@import url('./components/pagination.css');
+@import url('./components/modal.css');
+@import url('./components/rating-stars.css');
+@import url('./components/cart-item.css');
+@import url('./components/stats-card.css');
+@import url('./components/buttons.css');
+@import url('./components/forms.css');
+@import url('./components/cart-drawer.css');
+@import url('./components/tabs.css');
+@import url('./components/data-table.css');
+@import url('./components/category-pills.css');
+@import url('./components/vendor-sidebar.css');

@@ -1,0 +1,54 @@
+/* Hallmark: form input, label, and select component styles */
+.form-input,
+.input {
+  width: 100%;
+  padding: 0.5625rem 0.75rem;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-ink);
+  transition: border-color var(--transition-fast);
+}
+
+.form-input::placeholder,
+.input::placeholder {
+  color: var(--color-faint);
+}
+
+.form-input:focus,
+.input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-ink);
+  margin-bottom: 0.3125rem;
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.5625rem 0.75rem;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-ink);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2366615A' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 6l3.5 4 3.5-4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 0.75rem center;
+  padding-left: 1.75rem;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-focus);
+}

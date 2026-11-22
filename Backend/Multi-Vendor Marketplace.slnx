@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Multi-Vendor E-commerce Marketplace.Infrastructures/Multi-Vendor Marketplace.Infrastructures.csproj" />
+  <Project Path="Multi-Vendor Marketplace.Api/Multi-Vendor Marketplace.Api.csproj" />
+  <Project Path="Multi-Vendor Marketplace.Application.Tests/Multi-Vendor Marketplace.Application.Tests.csproj" />
+  <Project Path="Multi-Vendor Marketplace.Application/Multi-Vendor Marketplace.Application.csproj" />
+  <Project Path="Multi-Vendor Marketplace.Contracts/Multi-Vendor Marketplace.Contracts.csproj" Id="2a018769-6284-4f8c-aca0-7e497309c1cd" />
+  <Project Path="Multi-Vendor Marketplace.Domain/Multi-Vendor Marketplace.Domain.csproj" />
+</Solution>

@@ -1,0 +1,74 @@
+## ----------------------------------------------------------------------
+## .NET & Visual Studio Build Artifacts
+## ----------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# Visual Studio temporary files, user options, caches
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.pidb
+*.booproj
+
+# Visual Studio Code & JetBrains Rider
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sln.iml
+
+## ----------------------------------------------------------------------
+## Environment & Sensitive AppSettings
+## ----------------------------------------------------------------------
+# Local secrets and development settings (prevent leaking real keys/passwords)
+appsettings.Local.json
+appsettings.Development.json
+appsettings.Production.json
+*.env
+*.env.local
+
+## ----------------------------------------------------------------------
+## User Uploaded Files & Media
+## ----------------------------------------------------------------------
+# Ignore uploaded images, retain the folder structure via .gitkeep
+Multi-Vendor Marketplace.Api/wwwroot/uploads/**/*
+!Multi-Vendor Marketplace.Api/wwwroot/uploads/**/.gitkeep
+
+## ----------------------------------------------------------------------
+## Database & Local Storage Files
+## ----------------------------------------------------------------------
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+## ----------------------------------------------------------------------
+## Agent & Internal Tools Temporary Caches
+## ----------------------------------------------------------------------
+.archify/
+
+## ----------------------------------------------------------------------
+## OS Generated Files
+## ----------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/

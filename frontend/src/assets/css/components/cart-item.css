@@ -1,0 +1,79 @@
+/* Hallmark: cart item component styles */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item__image {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--color-paper-2);
+  border: 1px solid var(--color-rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-faint);
+}
+
+.cart-item__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item__name {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.cart-item__price {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cart-item__qty {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.cart-item__qty-btn {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-xs);
+  color: var(--color-ink);
+  transition: background var(--transition-fast);
+}
+
+.cart-item__qty-btn:hover {
+  background: var(--color-paper-2);
+}
+
+.cart-item__qty-val {
+  width: 28px;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  background: var(--color-paper-2);
+  height: 28px;
+  line-height: 28px;
+  font-variant-numeric: tabular-nums;
+}

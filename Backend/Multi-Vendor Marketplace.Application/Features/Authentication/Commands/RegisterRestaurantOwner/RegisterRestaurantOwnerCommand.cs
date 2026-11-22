@@ -1,0 +1,18 @@
+using MediatR;
+using Multi_Vendor_Marketplace.Application.Features.Authentication.Dtos;
+using Multi_Vendor_Marketplace.Domain.Common.Result;
+
+namespace Multi_Vendor_Marketplace.Application.Features.Authentication.Commands.RegisterRestaurantOwner
+{
+    public sealed record RegisterRestaurantOwnerCommand(
+        string OwnerName,
+        string RestaurantName,
+        string Category,
+        string Description,
+        string Email,
+        string Password,
+        string PhoneNumber,
+        string? LogoUrl = null,
+        string? CoverImageUrl = null
+    ) : IRequest<Result<AuthResponse>>;
+}
