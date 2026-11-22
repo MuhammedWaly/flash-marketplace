@@ -405,8 +405,3 @@ dotnet test "Multi-Vendor Marketplace.Application.Tests"
 - JWT keys should be at least 32 characters and stored securely (environment variables or secrets manager in production).
 - All auth endpoints are rate-limited to prevent brute-force attacks.
 
----
-
-## 📄 License
-
-Proprietary — Internal project for Talabli Marketplace.
