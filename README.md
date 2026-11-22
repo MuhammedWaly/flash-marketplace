@@ -2,12 +2,12 @@
 
 <img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet" alt=".NET 10"/>
 <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react" alt="React 19"/>
-<img src="https://img.shields.io/badge/TypeScript-Vite-646CFF?style=for-the-badge&logo=vite" alt="Vite"/>
+<img src="https://img.shields.io/badge/JavaScript-Vite-646CFF?style=for-the-badge&logo=vite" alt="Vite"/>
 <img src="https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind v4"/>
 <img src="https://img.shields.io/badge/Stripe-Connect-635BFF?style=for-the-badge&logo=stripe" alt="Stripe Connect"/>
 <img src="https://img.shields.io/badge/SignalR-Real--Time-512BD4?style=for-the-badge" alt="SignalR"/>
 
-# 🍕 Talabli — Multi-Vendor Food Delivery Platform
+#  Talabli — Multi-Vendor Food Delivery Platform
 
 **A production-grade, full-stack food ordering and delivery marketplace.**
 Customers order from nearby restaurants. Vendors manage their kitchens in real time. Admins oversee the entire platform — payments, KYC, and payouts included.
