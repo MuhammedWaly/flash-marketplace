@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/Stripe-Connect-635BFF?style=for-the-badge&logo=stripe" alt="Stripe Connect"/>
 <img src="https://img.shields.io/badge/SignalR-Real--Time-512BD4?style=for-the-badge" alt="SignalR"/>
 
-#  Talabli — Multi-Vendor Food Delivery Platform
+#  Flash — Multi-Vendor Food Delivery Platform
 
 **A production-grade, full-stack food ordering and delivery marketplace.**
 Customers order from nearby restaurants. Vendors manage their kitchens in real time. Admins oversee the entire platform — payments, KYC, and payouts included.
@@ -18,13 +18,13 @@ Customers order from nearby restaurants. Vendors manage their kitchens in real t
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
-Talabli is a **multi-vendor marketplace** similar to Talabat or Uber Eats, built entirely from scratch. It covers the full delivery lifecycle:
+Flash is a **multi-vendor marketplace**  built entirely from scratch. It covers the full delivery lifecycle:
 
-- 🧑‍💻 **Customers** browse nearby restaurants, build a cart, pay online or via COD, and track their order live.
-- 🍳 **Vendors** receive real-time kitchen orders, manage their menu, and get paid via Stripe Connect split payments.
-- 🛡️ **Admins** review KYC applications, monitor finances, adjust commissions, and trigger payouts.
+-  **Customers** browse nearby restaurants, build a cart, pay online or via COD, and track their order live.
+-  **Vendors** receive real-time kitchen orders, manage their menu, and get paid via Stripe Connect split payments.
+-  **Admins** review KYC applications, monitor finances, adjust commissions, and trigger payouts.
 
 ### Tech Stack at a Glance
 
@@ -41,7 +41,7 @@ Talabli is a **multi-vendor marketplace** similar to Talabat or Uber Eats, built
 
 ---
 
-## 🏗️ Repository Structure
+##  Repository Structure
 
 ```
 Multi Vendor Marketplace/
@@ -71,7 +71,7 @@ Multi Vendor Marketplace/
 
 ---
 
-## ⚙️ Backend — ASP.NET Core 10
+##  Backend — ASP.NET Core 10
 
 ### Architecture
 
@@ -221,7 +221,7 @@ Domain ← Application ← Infrastructures
 
 ---
 
-## 🎨 Frontend — React 19 + Vite
+##  Frontend — React 19 + Vite
 
 ### Architecture & Portals
 
@@ -290,7 +290,7 @@ The SPA is organized into **three isolated portals**, each protected by role-bas
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -398,7 +398,7 @@ dotnet test "Multi-Vendor Marketplace.Application.Tests"
 
 ---
 
-## 🔐 Security Notes
+##  Security Notes
 
 - **Never commit** real API keys or secrets. Use `appsettings.Local.json` (gitignored) for local overrides.
 - Stripe webhook signatures are verified on every incoming event — unsigned requests are rejected with `400 Bad Request`.
